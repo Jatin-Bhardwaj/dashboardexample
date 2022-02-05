@@ -56,6 +56,13 @@ app.get('/product/:item',(req,res)=>{
     })
 })
 
+app.get('/products/items',(req,res)=>{
+    connection.query(`SELECT Item, sum(Units) as Units FROM sample.sample4 group by Item`,(err,result)=>{
+        if(err) console.log("error occured")
+        else res.send(result);
+    })
+})
+
 app.listen(PORT,()=>{
     console.log(`connection listening in ${PORT} ...`);
 })

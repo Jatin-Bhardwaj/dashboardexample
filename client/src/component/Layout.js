@@ -20,6 +20,9 @@ export default function Layout() {
               <li>
                   <Link to="/linechartdemo2">Line Chart 2</Link>
               </li>
+              <li>
+                  <Link to="/piechartdemo">Pie Chart</Link>
+              </li>
           </ul>
       </nav>
 

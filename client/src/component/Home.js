@@ -20,7 +20,7 @@ useEffect(()=>{
     {productList.map((val,key)=>{
         return(
             <div>
-          <h3>Order Date : {val.OrderDate}</h3>
+          <h3>Order Date : {val.OrderDate} </h3>
           <h3>Region : {val.Region}</h3>
           <h3>Rep : {val.Rep}</h3>
           <h3>Item : {val.Item}</h3>
